@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # vim:ft=sh
+# this is a test file
 
 ############### Variables ###############
 

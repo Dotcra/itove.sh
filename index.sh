@@ -14,13 +14,13 @@ query_str(){
 		eval $i # assign every argument in query string; "eval a=1" and so on
 	done
 
-	: # if argument "page" not found in query string, page=home
-	: ${page:=home}
+	: ${page:=home} # if argument "page" not found in query string, page=home
 
 	eval $page=1 # e.g. home=1
 }
 
-query_str
+query_str &> /dev/null
+#query_str
 
 ############### Main Part ###############
 echo Content-type: text/html
